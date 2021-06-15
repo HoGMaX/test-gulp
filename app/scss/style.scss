@@ -1,0 +1,314 @@
+// @import url('nullStyle.scss');
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.header{
+    flex: 1 0 auto;
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Lato', sans-serif;
+        margin: 22px 0 31px;
+    }
+    &__group-info{
+        display: flex;
+        flex-direction: column;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    &__logo-img{
+        
+        padding-right: 30px;
+    }
+    &__logo-text{
+        font: {
+            family: 'Merriweather', serif;
+            size: 36px;
+            weight: normal;
+        }
+        text-align: center;
+        color: #005FA3;
+        line-height: 49px;
+    } 
+    &__body{
+        background: no-repeat url('/images/Rectangle.jpg');
+        padding: 170px 0 115px;
+    }
+    &__btn{ 
+        background-color: #005FA3;
+        color: #ffffff;
+        margin: 80px 0 120px;
+        width: 270px;
+        height: 60px;
+        padding: 18px 19px;
+        font: {
+            family: 'Lato', sans-serif;
+            size: 18px;
+            weight: normal;
+            style: normal;
+        }
+        line-height: 26px;
+    }
+    &__title{
+        display: block;
+        width: 590px;
+        font: {
+            family: 'Merriweather', sans-serif;
+            weight: 700;
+            size: 48px;
+            style: normal;
+        }
+        line-height: 68px;
+        color: #ffffff;
+    }
+    &__body-inner{
+        position: relative;
+        width: 100%;
+    }
+}
+.info{
+    &__list{
+        display: flex;
+        font: {
+            size:13px;
+            weight: 400;
+        }
+        line-height: 17px;
+    }
+    &__item{
+        margin-bottom: 22px;
+        color: #005FA3;
+
+        &:not(:last-child){
+            padding-right: 68px;
+        }
+    }
+    &__link{
+        color: #000000;
+        margin-left: 15px;
+    }
+}
+.nav{
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        line-height: 17px;
+        font: {
+            weight: 700;
+            size: 14px;
+        }
+        text-transform: uppercase;
+    }
+    &__link{
+        color: #222222;
+    }
+}
+.footer{
+    background-color: #b9b9b9;
+    margin-top: 50px;
+    flex: 0 0 auto;
+    font: {
+        family: 'Lato', sans-serif;
+        weight: 300;
+        size: 14px;
+        style: normal;
+    }
+    color: #000000;
+    line-height: 19px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0 40px;
+        align-items: center;
+    }
+}
+.main{
+    flex: 1 1 auto;
+}
+
+.subtitle{
+    font: {
+        size:24px;
+        family:'Lato', sans-serif;
+        weight: 900;
+    }
+    line-height: 33px;
+    color:#BDBDBD;
+    margin: 140px 0 40px;
+}
+.title{
+    font: {
+        family:'Merriweather', sans-serif;
+        weight:900;
+        size: 40px;
+    }
+    line-height: 69px;
+    color: #333333;
+    margin-bottom: 100px;
+}
+.services{
+    
+    &__items{
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 360px;
+        margin: 15px;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        background: no-repeat url('/images/Rectangle_2.jpg') 0 0 / 100%;
+        position: relative;
+    }
+    &__item-title{
+        position: absolute;
+        font: {
+            family: 'Lato', sans-serif;
+            size: 24px;
+            weight: 900;
+        }
+        line-height: 36px;
+        color: #ffffff;
+        bottom: 45px;
+        left: 45px;
+    }
+}
+
+.slider{
+    position: relative;
+}
+
+//slick slider
+
+    .slick-track{
+    display: flex;
+    }
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-next{
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        width: 60px;
+        height: 60px;
+        background: url('/images/next.svg') no-repeat 50%;
+        font-size: 0;
+        background-color: rgba(255,255,255,0.4);
+    }
+    .slick-prev{
+        position: absolute;
+        right: 60px;
+        bottom: -10px;
+        width: 60px;
+        height: 60px;
+        background: url('/images/prev.svg') no-repeat 50%;
+        font-size: 0;
+        background-color: rgba(255,255,255, 0.2);
+    }
+    .slick-dots{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        & li {
+            margin: 0px 20px 0;
+        }
+        & li.slick-active button {
+            background-color: #ffffff;
+        }
+        & button{
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.4);
+        }
+    }
+//end
+
+
+//aboutus
+    .aboutus{
+        &__row{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__column-1{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        &__column-2{
+            width: 50%;
+            display: flex;
+        }
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        &__card{
+            display: flex;
+            flex-direction: column;
+            &:nth-child(2n+1){
+                margin-right: 15px;
+            }
+            &:nth-child(3n),&:nth-child(4n){
+
+                margin-top: 30px;
+            }
+            &:nth-child(2n){
+                margin-left: 15px;
+            }
+            width: 255px;
+            height: 255px;
+            background-color:#EBEBEB;
+        }
+        &__title{
+            margin: 10px 40px 30px;
+            font: {
+                size:55px;
+                weight: 900;
+                family: 'Lato', sans-serif;
+                style: normal;
+            }
+            letter-spacing: 0.1em;
+            line-height: 66px;
+            color: #000000;
+        }
+        &__text{
+            margin: 0 40px 47px;
+            display: block;
+            max-width: 107px;
+            max-height: 37px;
+            font: {
+                size: 14px;
+                weight: bold;
+                style: normal;
+            }
+            line-height: 18px;
+            color: #000000;
+        }
+        &__link{
+            margin: 0 40px 0;
+            text-decoration: underline;
+            color: #005FA3;
+        }
+    }
+
+//end

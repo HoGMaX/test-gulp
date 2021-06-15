@@ -1,0 +1,4 @@
+node_modules/*
+WP/*
+gulpfile.js
+package-lock.js
